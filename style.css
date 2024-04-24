@@ -1,0 +1,116 @@
+body {
+    background-image: url("images/starry.png");
+    color:#fcd408;
+    text-shadow: 2px 2px 4px #e0bd07;
+    margin: 0;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    height: 100%;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centerBase {
+    margin-top: 40px;
+    max-width: 700px;
+    height: 500px;
+    background-color: #b57002;
+    border: red 10px solid;
+    border-style:ridge;
+    padding: 10px;
+}
+
+.centerText {
+    box-sizing: border-box;
+    color: #ffe600;
+    height: 100%;
+    width: 100%;
+    font-size: 1.7em;
+}
+
+.title {
+    color:#fcd408;
+    text-shadow: 2px 2px 4px #e0bd07;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    min-width: 20%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 20%;
+    min-width: 20%;
+    padding-top: 60px;
+}
+
+.centered-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-right: 100px;
+}
+
+.music-banner {
+    position: absolute;
+    right: 0;
+    top:150px;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 150px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.badge {
+    padding: 0 5px 0 5px;
+    height: 30px;
+    image-rendering: pixelated;
+}
+
+#rotate180 {
+    transform: rotate(180deg);
+}
+
+#rightConfetti {
+    position: relative;
+    top: -15px;
+}

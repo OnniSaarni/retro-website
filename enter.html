@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/noseoos.gif">
+    <title>Onnin kotisivu!!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("images/starry.png");
+    color:#fcd408;
+    text-shadow: 2px 2px 4px #e0bd07;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+</style>
+<body>
+    <audio id="myAudio" loop>
+        <source src="" type="audio/mpeg">
+    </audio>
+    <script>
+var audio = document.getElementById('myAudio');
+$(document).ready(function(){
+    $(".changePage").click(function(e){
+        e.preventDefault();
+        $("#content").load("home.html");
+        setTimeout(function() {
+            audio.play();
+        }, 100);
+    });
+});
+        </script>
+    <div class="content">
+        <a target="_self" href="" class="changePage"><img alt="enter hand" src="images/enter.gif" style="image-rendering: pixelated; height:300px;"></a>
+        <a target="_self" href="" class="changePage"><img alt="onnin sivut text gif" src="images/text.gif" style="image-rendering: pixelated; width: 750px;"></a>
+        <a target="_self" href="" class="changePage"><img alt="24/7 open" src="images/open24.gif" style="image-rendering: pixelated; width: 300px;"></a>
+        <a target="_blank" href="https://web.archive.org/web/19990828014913if_/http://www.amazon.com:80/"><img alt="amazon ad" src="images/amazon.gif" style="image-rendering: pixelated; width: 300px; position: absolute; right: 20px; bottom: 20px;"></a>
+    </div>
+</body>
+</html>
